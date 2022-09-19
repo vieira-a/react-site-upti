@@ -1,0 +1,42 @@
+@use '../variables'
+@use '../mixins'
+   
+.navigation
+    display: flex
+    flex-direction: column
+    justify-content: space-between    
+    background-color: variables.$bg-secondary
+
+.navigationBox 
+    background-color: white
+    display: flex
+    justify-content: space-between
+
+.menu 
+    padding-block: 3rem
+    background-color: variables.$bg-secondary
+    border-top: 1px solid white
+    border-bottom: 1px solid variables.$border-primary
+    
+
+.menu ul
+    padding-inline: 3rem
+    
+.menu ul li a 
+    font-size: 1.4rem
+    color: variables.$fc-paragraph
+    line-height: 250%
+    
+.menuSupport
+    margin-top: 3rem
+    
+
+.btnSupport
+    @include mixins.flex-space-between
+    @include mixins.reset-button    
+    margin-inline: auto
+    width: 80%
+    padding: 2rem 3rem
+    background-color: variables.$bg-primary
+    font-size: 1.4rem
+    color: white

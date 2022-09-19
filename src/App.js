@@ -1,6 +1,10 @@
+import Navigation from './components/Navigation';
+
 function App() {
   return (
-    <h1>UPTI</h1>
+    <>
+    <Navigation/>
+    </>
   );
 }
 

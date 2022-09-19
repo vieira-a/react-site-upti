@@ -1,0 +1,31 @@
+@use 'variables'
+@use 'mixins'
+
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  
+
+
+ul 
+  list-style: none
+
+a 
+  text-decoration: none
+
+li a 
+  text-decoration: none
+
+body 
+  font-family: variables.$ff-main
+  color: variables.$fc-paragraph
+  background-color: variables.$bg-secondary
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+
+button
+  @include mixins.reset-button
+  
