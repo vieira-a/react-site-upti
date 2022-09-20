@@ -6,17 +6,24 @@
     flex-direction: column
     justify-content: space-between    
     background-color: variables.$bg-secondary
+    
+.logo
+    display: flex
+
+.logo img
+    width: 50px
 
 .navigationBox 
     background-color: white
     @include mixins.flex-space-between
-    
-    .logo img
-        width: 50px
 
 .menuActive 
     background-color: variables.$bg-secondary
     border-top: 1px solid white
+    position: absolute
+    height: 100vh
+    width: 100vw
+    top: 50px
 
 .menuActive ul
     padding-inline: 3rem

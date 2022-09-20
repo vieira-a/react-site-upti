@@ -1,6 +1,12 @@
+import MainHeader from "./MainHeader"
+
 const Main = () => {
   return (
-    <div>Main</div>
+    <main>
+      
+      <MainHeader/>
+
+    </main>
   )
 }
 

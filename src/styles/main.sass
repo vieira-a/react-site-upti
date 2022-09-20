@@ -6,9 +6,8 @@
   margin: 0
   padding: 0
   box-sizing: border-box
+  line-height: 1.7
   
-
-
 ul 
   list-style: none
 
@@ -17,15 +16,24 @@ a
 
 li a 
   text-decoration: none
+  
+img
+    width: 100%
 
 body 
-  font-family: variables.$ff-main
+  font-family: variables.$font-stack
   color: variables.$fc-paragraph
+  overflow: hidden
   background-color: variables.$bg-secondary
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+section
+  border-top: 1px solid white
+
 
 button
   @include mixins.reset-button
-  
+
+.content
+  margin-inline: 1rem  
