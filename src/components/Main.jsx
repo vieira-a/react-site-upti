@@ -1,3 +1,4 @@
+import AnalyticsCards from "./AnalyticsCards"
 import MainHeader from "./MainHeader"
 
 const Main = () => {
@@ -5,6 +6,7 @@ const Main = () => {
     <main>
       
       <MainHeader/>
+      <AnalyticsCards/>
 
     </main>
   )

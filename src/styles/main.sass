@@ -23,10 +23,10 @@ img
 body 
   font-family: variables.$font-stack
   color: variables.$fc-paragraph
-  overflow: hidden
   background-color: variables.$bg-secondary
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+  overflow: auto
 
 button
   @include mixins.reset-button
@@ -36,4 +36,6 @@ button
     transition: .3s
 
 .content
-  margin-inline: 1rem  
+  margin-inline: 1rem
+  padding-top: 3rem 
+
