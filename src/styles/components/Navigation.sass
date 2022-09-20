@@ -9,34 +9,41 @@
 
 .navigationBox 
     background-color: white
-    display: flex
-    justify-content: space-between
+    @include mixins.flex-space-between
+    
+    .logo img
+        width: 50px
 
-.menu 
-    padding-block: 3rem
+.menuActive 
     background-color: variables.$bg-secondary
     border-top: 1px solid white
+
+.menuActive ul
+    padding-inline: 3rem
+    padding-block: 3rem
     border-bottom: 1px solid variables.$border-primary
     
-
-.menu ul
-    padding-inline: 3rem
-    
-.menu ul li a 
+.menuActive ul li a 
     font-size: 1.4rem
     color: variables.$fc-paragraph
     line-height: 250%
+
+.menu
+    display: none
+
+.closeMenu
+    display: none
     
 .menuSupport
+    @include mixins.flex-space-between
     margin-top: 3rem
     
-
-.btnSupport
-    @include mixins.flex-space-between
-    @include mixins.reset-button    
-    margin-inline: auto
-    width: 80%
-    padding: 2rem 3rem
-    background-color: variables.$bg-primary
-    font-size: 1.4rem
-    color: white
+    .btnSupport
+        @include mixins.flex-space-between
+        align-items: center
+        margin-inline: auto
+        width: 80%
+        padding: 2rem 3rem
+        background-color: variables.$bg-primary
+        font-size: 1.4rem
+        color: white
