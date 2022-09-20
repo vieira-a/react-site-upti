@@ -35,9 +35,11 @@ const Navigation = () => {
             <li><a href="index.html">Fale conosco</a></li>
           </ul>
           <div className="menuSupport">
-            <a href='http://suporte.up-ti.com' className="btnSupport">
-              Suporte<BsArrowRightSquare/>
-            </a>
+            <button className="btnSupport">
+              <a href='http://suporte.up-ti.com'>Suporte
+              </a>
+              <BsArrowRightSquare/>
+            </button>
           </div>
         </div>
       </div>

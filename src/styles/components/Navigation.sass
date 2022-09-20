@@ -18,12 +18,11 @@
     @include mixins.flex-space-between
 
 .menuActive 
-    background-color: variables.$bg-secondary
-    border-top: 1px solid white
-    position: absolute
+    background-color: variables.$bg-secondary  
     height: 100vh
     width: 100vw
     top: 50px
+    
 
 .menuActive ul
     padding-inline: 3rem
@@ -44,7 +43,7 @@
 .menuSupport
     @include mixins.flex-space-between
     margin-top: 3rem
-    
+        
     .btnSupport
         @include mixins.flex-space-between
         align-items: center
@@ -54,3 +53,6 @@
         background-color: variables.$bg-primary
         font-size: 1.4rem
         color: white
+
+        a
+            color: white
