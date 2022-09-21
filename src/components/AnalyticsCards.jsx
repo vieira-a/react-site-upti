@@ -41,7 +41,7 @@ const AnalyticsCards = () => {
             <div className='analyticCard' key={data.id}>
 
               <h1>{data.avg}</h1>
-              <p>{data.description}</p>
+              <h3>{data.description}</h3>
               <div className="menuMore">
                 <button className="btnMore">
                   <a href='http://suporte.up-ti.com'>Saiba mais</a>
