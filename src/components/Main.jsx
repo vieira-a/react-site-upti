@@ -2,11 +2,22 @@ import AnalyticsCards from "./AnalyticsCards"
 import MainHeader from "./MainHeader"
 
 const Main = () => {
+
   return (
     <main>
       
-      <MainHeader/>
-      <AnalyticsCards/>
+      <div className="hero">
+        
+        <MainHeader/>
+
+      </div>
+
+      <div className="analytics">
+
+        <AnalyticsCards/>
+      
+      </div>
+
 
     </main>
   )

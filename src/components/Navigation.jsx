@@ -4,18 +4,23 @@ import { useState } from 'react';
 
 const Navigation = () => {
 
+  
   const [menuActive, setMenuActive] = useState("menu")
   const [btnActive, setBtnActive] = useState("openMenu")
+  
   
   const handleMenuActive = () => {
     setMenuActive(!menuActive)
     setBtnActive(!btnActive)
+
   }
 
   return (
 
-    <nav className="navigation">
-      <div className="navigationBox">
+    <>
+    <nav>
+      <div className="navigation">
+
         <a className="logo" href="index.html">
           <img src="logo.png" alt="Logo UPTI" />
         </a>
@@ -25,7 +30,9 @@ const Navigation = () => {
         <button className={btnActive ? "closeMenu" : "openMenu"} onClick={handleMenuActive}>
           <svg viewBox="0 0 24 24" fill="none" className="closeIcon" width="32" height="32" focusable="false"><path d="m17.5 6.5-11 11m11 0-11-11" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></path></svg>
         </button>
+
       </div>
+
       <div className={menuActive ? "menu" : "menuActive"}>
         <div className="menuItems">
           <ul>
@@ -43,7 +50,10 @@ const Navigation = () => {
           </div>
         </div>
       </div>
+
+      
     </nav> 
+    </>
   );
 };
 

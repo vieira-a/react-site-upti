@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/components/AnalyticsCards.sass'
+import { BsArrowRightSquare } from "react-icons/bs";
 
 const AnalyticsCards = () => {
 
@@ -22,31 +23,40 @@ const AnalyticsCards = () => {
   ]
   
   return (
-  
-    <div className="content">
 
-      <div className="analytics">
+    <>
 
-      {dataAnalytics.map( (data) => {
+      <div className="header">
         
-        return (
-          
-          <div className='analyticCard' key={data.id}>
+        <h2>Indicadores em destaque</h2>
 
-            <h2>+ {data.avg}</h2>
-            <p>{data.description}</p>
-
-          </div>
-        )
-    
-      
-
-      })}
-      
       </div>
 
-    </div>
+      <div className="content">
 
+        {dataAnalytics.map( (data) => {
+          
+          return (
+            
+            <div className='analyticCard' key={data.id}>
+
+              <h1>{data.avg}</h1>
+              <p>{data.description}</p>
+              <div className="menuMore">
+                <button className="btnMore">
+                  <a href='http://suporte.up-ti.com'>Saiba mais</a>
+                  <BsArrowRightSquare/>
+                </button>
+              </div>
+
+            </div>
+          )
+
+        })}
+
+      </div>
+
+      </>  
   );
 };
 

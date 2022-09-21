@@ -7,7 +7,10 @@
   padding: 0
   box-sizing: border-box
   line-height: 1.7
-  
+
+h1
+  font-size: 4.2rem  
+
 ul 
   list-style: none
 
@@ -21,12 +24,14 @@ img
     width: 100%
 
 body 
+  width: 100%
+  height: 100%
   font-family: variables.$font-stack
   color: variables.$fc-paragraph
   background-color: variables.$bg-secondary
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  overflow: auto
+  overflow-x: hidden
 
 button
   @include mixins.reset-button
@@ -35,7 +40,13 @@ button
     opacity: .9
     transition: .3s
 
-.content
-  margin-inline: 1rem
-  padding-top: 3rem 
+.header 
+  padding-block: 1rem
+  margin-inline: 2rem
 
+.content
+  margin-inline: 2rem
+
+main
+  padding-top: 50px
+  

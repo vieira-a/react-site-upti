@@ -3,16 +3,22 @@ import MainHeaderBanner from '../assets/banner-services.jpg'
 
 const MainHeader = () => {
   return (
-    <section>
-      <div className="bannerImage">
+    <>
+
+      <div className="banner">
+        
         <img src={MainHeaderBanner} alt="" />
 
       </div>
-         <div className="content">
-          <h2>Boas vindas á UP!</h2>
-          <p>Usamos a tecnologia de forma inteligente em busca do crescimento para o seu negócio.</p>
-        </div>
-    </section>
+
+      <div className="header">
+
+          <h2>Boas vindas à UP!</h2>
+          <p>Usamos a <b>tecnologia</b> de forma <b>inteligente</b> em busca do <b>crescimento</b> para o seu negócio.</p>
+
+      </div>
+
+    </>
   )
 }
 

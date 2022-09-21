@@ -1,11 +1,14 @@
 @use '../variables'
 @use '../mixins'
    
+
+nav
+    position: fixed
+    width: 100vw
+
 .navigation
-    display: flex
-    flex-direction: column
-    justify-content: space-between    
-    background-color: variables.$bg-secondary
+    @include mixins.flex-space-between  
+    background-color: white
 
 .logo
     display: flex
@@ -13,15 +16,14 @@
 .logo img
     width: 50px
 
-.navigationBox 
-    background-color: white
-    @include mixins.flex-space-between
 
 .menuActive 
     background-color: variables.$bg-secondary  
     height: 100vh
     width: 100vw
+    top: 50px
 
+    
 .menuActive ul
     padding-inline: 3rem
     padding-block: 3rem
