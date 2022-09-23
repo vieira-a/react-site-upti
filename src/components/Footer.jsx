@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
     
-      <Footer>
+      <footer>
         {/* <div className="socialLinks">
           <a href="https://www.linkedin.com"><IoLogoLinkedin/></a>
           <a href="https://www.instagram.com"><IoLogoInstagram/></a>
@@ -22,7 +22,7 @@ const Footer = () => {
           <p>Todos os direitos reservados.</p>
         </div>
         
-      </Footer>
+      </footer>
 
     </>
   )
