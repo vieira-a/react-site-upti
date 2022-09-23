@@ -40,17 +40,32 @@ nav
     
 .menuSupport
     @include mixins.flex-space-between
-    margin-top: 3rem
+    margin-top: 4rem
         
     .btnSupport
         @include mixins.flex-space-between
         align-items: center
         margin-inline: auto
         width: 80%
-        padding: 2rem 3rem
+        padding: 2rem 2rem
         background-color: variables.$bg-primary
         font-size: 1.4rem
         color: white
 
         a
             color: white
+
+.socialLinks
+    display: flex
+    justify-content: center
+    gap: 1rem
+    margin-top: 4rem
+    padding-block: 4rem
+    border-top: 1px solid variables.$border-primary
+
+
+    svg
+        display: flex
+        font-size: 2.4rem
+        color: variables.$bg-primary
+    

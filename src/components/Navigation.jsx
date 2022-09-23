@@ -1,5 +1,6 @@
 import '../styles/components/Navigation.sass'
 import { BsArrowRightSquare } from "react-icons/bs";
+import { IoLogoLinkedin, IoLogoInstagram, IoLogoDiscord } from "react-icons/io5";
 import { useState } from 'react';
 
 const Navigation = () => {
@@ -47,6 +48,11 @@ const Navigation = () => {
               </a>
               <BsArrowRightSquare/>
             </button>
+          </div>
+          <div className="socialLinks">
+            <a href="https://www.linkedin.com"><IoLogoLinkedin/></a>
+            <a href="https://www.instagram.com"><IoLogoInstagram/></a>
+            <a href="https://www.discord.com"><IoLogoDiscord/></a>
           </div>
         </div>
       </div>

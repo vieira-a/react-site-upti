@@ -6,11 +6,7 @@ const Footer = () => {
     <>
     
       <footer>
-        {/* <div className="socialLinks">
-          <a href="https://www.linkedin.com"><IoLogoLinkedin/></a>
-          <a href="https://www.instagram.com"><IoLogoInstagram/></a>
-          <a href="https://www.discord.com"><IoLogoDiscord/></a>
-        </div> */}
+        
         <div className="logo">
           <a href="index.html">
             <img src="logo.png" alt="Logo UPTI" />
