@@ -1,5 +1,6 @@
 import AnalyticsCards from "./AnalyticsCards"
 import MainHeader from "./MainHeader"
+import ServicesCards from "./ServicesCards"
 
 const Main = () => {
 
@@ -16,6 +17,12 @@ const Main = () => {
 
         <AnalyticsCards/>
       
+      </div>
+
+      <div className="services">
+
+        <ServicesCards />
+
       </div>
 
 

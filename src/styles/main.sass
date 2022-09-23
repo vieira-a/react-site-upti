@@ -9,7 +9,19 @@
   line-height: 1.7
 
 h1
-  font-size: 4.2rem  
+  font-size: variables.$fs-h1
+
+h2
+  font-size: variables.$fs-h2
+
+h3
+  font-size: variables.$fs-h3
+
+h4
+  font-size: variables.$fs-h4
+
+p
+  font-size: variables.$fs-p
 
 ul 
   list-style: none
@@ -49,4 +61,14 @@ button
 
 main
   padding-top: 50px
-  
+
+.cardInfo
+    margin-inline: 2rem
+
+.menuMore
+  @include mixins.flex-space-between
+  @include mixins.menu-more
+
+.btnMore
+  @include mixins.flex-space-between
+  @include mixins.button-more

@@ -1,8 +1,7 @@
-import React from 'react'
 import '../styles/components/AnalyticsCards.sass'
 import { BsArrowRightSquare } from "react-icons/bs";
 
-import { dataAnalytics } from '../data/stats.js'
+import { dataAnalytics } from '../data/stats'
 
 const AnalyticsCards = () => {
   
@@ -12,7 +11,7 @@ const AnalyticsCards = () => {
 
       <div className="header">
         
-        <h2>Indicadores em destaque</h2>
+        <h4>Indicadores</h4>
 
       </div>
 
@@ -24,8 +23,13 @@ const AnalyticsCards = () => {
             
             <div className='analyticCard' key={data.id}>
 
-              <h1>{data.avg}</h1>
-              <h3>{data.description}</h3>
+              <div className="cardInfo">
+                
+                <h2>{data.avg}</h2>
+                <p>{data.description}</p>
+
+              </div>
+
               <div className="menuMore">
                 <button className="btnMore">
                   <a href='http://suporte.up-ti.com'>Saiba mais</a>
