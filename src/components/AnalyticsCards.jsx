@@ -2,25 +2,9 @@ import React from 'react'
 import '../styles/components/AnalyticsCards.sass'
 import { BsArrowRightSquare } from "react-icons/bs";
 
-const AnalyticsCards = () => {
+import { dataAnalytics } from '../data/stats.js'
 
-  const dataAnalytics = [
-    {
-      id: 1,
-      avg: 50,
-      description: "Projetos realizados"
-    },
-    {
-      id: 2,
-      avg: 200,
-      description: "Atendimentos mensais"
-    },
-    {
-      id: 3,
-      avg: 80,
-      description: "Pessoas atendidas"
-    }
-  ]
+const AnalyticsCards = () => {
   
   return (
 
