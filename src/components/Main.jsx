@@ -2,6 +2,7 @@ import AnalyticsCards from "./AnalyticsCards"
 import MainHeader from "./MainHeader"
 import ServicesCards from "./ServicesCards"
 import ContactCards from "./ContactCards"
+import Footer from "./Footer"
 
 const Main = () => {
 
@@ -32,6 +33,7 @@ const Main = () => {
 
       </div>
 
+        <Footer />
 
     </main>
   )

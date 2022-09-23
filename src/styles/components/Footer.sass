@@ -1,0 +1,26 @@
+@use '../variables'
+@use '../mixins'
+
+
+footer
+    @include mixins.flex-column
+    padding-block: 6rem
+    text-align: center
+    align-items: center
+        
+footer .logo img
+    width: 80px
+    display: flex
+    
+.socialLinks
+    @include mixins.flex-space-between
+    padding-block: 1rem
+    gap: 2rem
+
+    svg
+        display: flex
+        font-size: 1.8rem
+        color: variables.$bg-primary
+
+.copyright p
+    font-size: 1rem
