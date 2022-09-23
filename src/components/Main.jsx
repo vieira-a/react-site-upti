@@ -1,6 +1,7 @@
 import AnalyticsCards from "./AnalyticsCards"
 import MainHeader from "./MainHeader"
 import ServicesCards from "./ServicesCards"
+import ContactCards from "./ContactCards"
 
 const Main = () => {
 
@@ -22,6 +23,12 @@ const Main = () => {
       <div className="services">
 
         <ServicesCards />
+
+      </div>
+
+      <div className="contact">
+
+        <ContactCards />
 
       </div>
 

@@ -1,0 +1,21 @@
+@use '../variables'
+@use '../mixins'
+
+    
+
+.contactCard
+    @include mixins.flex-column  
+
+.card
+    @include mixins.flex-column
+    align-items: center   
+    padding-block: 2rem
+    background-color: variables.$bg-primary
+    color: variables.$bg-secondary
+    
+    a
+        color: variables.$bg-secondary
+    
+    svg
+        font-size: 4.8rem
+    
