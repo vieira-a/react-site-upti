@@ -1,3 +1,5 @@
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+
 import '../styles/components/Navigation.sass';
 import { BsArrowRightSquare } from 'react-icons/bs';
 import { IoLogoLinkedin, IoLogoInstagram, IoLogoDiscord } from 'react-icons/io5';
@@ -31,10 +33,10 @@ const Navigation = () => {
         <div className={menuActive ? "menu" : "menuActive"}>
           <div className="menuItems">
             <ul>
-              <li><a href="index.html">Início</a></li>
-              <li><a href="index.html">Serviços</a></li>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#services">Serviços</a></li>
               <li><a href="index.html">Conheça a UP</a></li>
-              <li><a href="index.html">Fale conosco</a></li>
+              <li><a href="#contact">Fale conosco</a></li>
             </ul>
             <div className="menuSupport">
               <button className="btnSupport">

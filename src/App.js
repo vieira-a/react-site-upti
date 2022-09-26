@@ -1,14 +1,17 @@
-import Header from './components/Header';
-import Main from './components/Main';
+import Navigation from "./components/Navigation";
+import Main from "./pages/Main";
 
 function App() {
      
   return (
     <>
-    <Header />
-    <Main />
+
+      <Navigation/>
+      <Main/>
+      
     </>
   );
 }
 
 export default App;
+

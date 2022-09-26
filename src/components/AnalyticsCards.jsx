@@ -32,7 +32,7 @@ const AnalyticsCards = () => {
             </div>
           );
 
-        })};
+        })}
 
       </div>
 

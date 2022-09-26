@@ -1,8 +1,8 @@
-import AnalyticsCards from './AnalyticsCards';
-import MainHeader from './MainHeader';
-import ServicesCards from './ServicesCards';
-import ContactCards from './ContactCards';
-import Footer from './Footer';
+import AnalyticsCards from '../components/AnalyticsCards';
+import MainHeader from '../components/MainHeader';
+import ServicesCards from '../components/ServicesCards';
+import ContactCards from '../components/ContactCards';
+import Footer from '../components/Footer';
 
 const Main = () => {
 
@@ -15,7 +15,7 @@ const Main = () => {
       <div className="analytics">
         <AnalyticsCards/>
       </div>
-      <div className="services">
+      <div className='services' id='services'>
         <ServicesCards />
       </div>
       <div className="contact">
