@@ -33,10 +33,10 @@ const Navigation = () => {
         <div className={menuActive ? "menu" : "menuActive"}>
           <div className="menuItems">
             <ul>
-              <li><a href="#home">Início</a></li>
-              <li><a href="#services">Serviços</a></li>
+              <li><a onClick={handleMenuActive} href="#home">Início</a></li>
+              <li><a onClick={handleMenuActive} href="#services">Serviços</a></li>
               <li><a href="index.html">Conheça a UP</a></li>
-              <li><a href="#contact">Fale conosco</a></li>
+              <li><a onClick={handleMenuActive} href="#contact">Fale conosco</a></li>
             </ul>
             <div className="menuSupport">
               <button className="btnSupport">

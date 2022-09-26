@@ -16,7 +16,7 @@ const ContactCards = () => {
         {dataContact.map(( contact ) => {
           
           return (
-
+            
             <div className="contactCard" key={contact.id}>
               <h4>
                 <a className="card" href={contact.support}><IoHelpCircleOutline />Abrir chamado</a>

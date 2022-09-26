@@ -9,16 +9,16 @@ const Main = () => {
   return (
 
     <main>  
-      <div className="hero">
+      <div className="section hero" id='home'>
         <MainHeader/>
       </div>
-      <div className="analytics">
+      <div className="section analytics" id='analytics'>
         <AnalyticsCards/>
       </div>
-      <div className='services' id='services'>
+      <div className='section services' id='services'>
         <ServicesCards />
       </div>
-      <div className="contact">
+      <div className="section contact" id='contact'>
         <ContactCards />
       </div>
         <Footer />
